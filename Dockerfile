@@ -19,4 +19,4 @@ EXPOSE 5000
 # Changer d'user pour lancer l'app
 USER flask
 
-CMD ["./test.py"]
+CMD ["./app.py"]
