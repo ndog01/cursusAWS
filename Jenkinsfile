@@ -18,7 +18,7 @@ spec:
         - cat
       tty: true
 
-      - name: docker
+    - name: docker
       image: docker
       command:
         - cat
@@ -26,7 +26,7 @@ spec:
       volumeMounts:
         - mountPath: /var/run/docker.sock
           name: docker-sock
-          
+
   volumes:
     - name: docker-sock
       hostPath:
@@ -45,9 +45,6 @@ spec:
         }
       }
     }
-  }
-
-}
 
     stage('Build image') {
       steps {
@@ -57,3 +54,8 @@ spec:
         }
       }
     }
+  }
+
+}
+
+
